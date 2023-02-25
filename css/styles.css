@@ -1,0 +1,420 @@
+*{ box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/*apartir de aqui van las cajas*/
+h1{ font-family: fantasy;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+section{
+    background-color: rgb(255, 255, 255);
+}
+
+.content{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.caja1{
+    background-color: rgb(255, 255, 255); }
+    a:link { color: blue; }        
+    a:visited { color: purple; } 
+    a:hover { background: rgb(169, 219, 241); } 
+    a:active { color: rgb(209, 3, 130); } 
+    
+
+.caja2{
+    background-color:rgb(245, 220, 255);
+}
+    .a1:any-link{
+    border: 1px solid blue;
+    color: rgb(183, 0, 255);}
+    .a1:-webkit-any-link {
+    border: 1px solid blue;
+    color:rgb(183, 0, 255);
+    }
+
+
+.caja3{
+    background-color:rgb(255, 255, 255);
+ }
+
+
+.caja4{
+    background-color:rgb(245, 220, 255);}
+    div,
+    select {margin: 8px;}
+    input[type="radio"]:checked{ 
+    box-shadow: 0 0 0 3px rgb(163, 48, 106);}
+    input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px rgb(163, 48, 106);}
+    option:checked {
+    color: rgb(20, 253, 242);
+}
+
+.caja5{
+    background-color:rgb(255, 255, 255);
+}
+
+.caja6{
+    background-color:rgb(245, 220, 255);}
+    input:default {box-shadow: 0 0 2px 1px rgb(162, 80, 255);}
+    input:default + label {color: rgb(255, 80, 211);
+}
+
+.caja7{
+   background-color:rgb(255, 255, 255);}
+   span{color: rgb(255, 29, 217);}
+   .dir1{
+   color: rgb(108, 46, 190);
+}
+   
+
+ .caja8{
+   background-color:rgb(245, 220, 255);
+ }
+
+
+ .caja9{
+    background-color:rgb(255, 255, 255);}
+    .box {
+      background: pink;
+      height: 80px;
+      width: 80px;}
+    .box:empty {
+      background: rgb(154, 122, 214);
+}
+
+.caja10{
+   background-color:rgb(245, 220, 255);
+}
+
+.caja11{
+   background-color: white;}
+   @page :first {
+      margin-left: 50%;
+      margin-top: 50%;}
+    p {page-break-after: always; 
+}
+
+.caja12{
+   background-color:rgb(245, 220, 255);}
+   p:first-child {color: rgb(111, 0, 255);
+   background-color: rgb(248, 247, 247);
+   padding: 5px;}
+   ul li { color: rgb(132, 0, 255);}
+   ul li:first-child {color: rgb(69, 122, 235);
+   font-weight: bold
+}
+
+.caja13{
+   background-color: white;}
+   .parrafo2 :first-of-type {
+   color: red;
+   font-style: italic;}
+   .caja131 :first-of-type {
+   background-color: pink;
+ }
+
+.caja14{
+   background-color:rgb(245, 220, 255);}
+   .red-input:focus {
+    background: rgb(128, 128, 128);
+    color: red; }
+    .blue-input:focus {
+    background: rgb(168, 168, 168);
+    color: blue;
+}
+.caja15{
+   background-color: white;}
+   input, button {
+   margin: 10px;}
+   .focus-only {
+   outline: 2px solid black;}
+   .focus-visible-only {
+   outline: 4px dashed rgb(183, 0, 255);
+}
+
+.caja16{
+   background-color:rgb(245, 220, 255);}
+   form {
+    border: 1px solid;
+    color: gray;
+    padding: 4px;}
+    form:focus-within {
+    background: #ff8;
+    color: black;}
+    input {
+    margin: 4px;
+ }
+
+.caja17{
+   background-color: white;}
+   :future(p, span) {
+    display: none;
+}
+
+.caja18{
+   background-color:rgb(245, 220, 255);}
+   .a2 {
+      background-color: rgb(221, 176, 230);
+      transition: background-color;}
+    .a2:hover {
+      background-color: rgb(174, 0, 255);
+}
+
+.caja19{
+   background-color: white;}
+   input:indeterminate + label {
+   background: rgb(228, 131, 223);}
+   progress {
+   margin: 4px;}
+   progress:indeterminate {
+   opacity: 0.5;
+   background-color: lightgray;
+   box-shadow: 0 0 2px 1px red;
+   }
+
+.caja20{
+   background-color:rgb(245, 220, 255);}
+   li {
+   list-style: none;
+   margin-bottom: 1em;}
+   input {
+   border: 1px solid black;}
+   input:in-range {
+   background-color: rgba(0, 255, 0, 0.25);}
+   input:out-of-range {
+   background-color: rgba(255, 0, 0, 0.25);
+   border: 2px solid red;}
+   input:in-range + label::after {
+   content: 'increible kmo tu.';}
+   input:out-of-range + label::after {
+   content: 'fuera de rango,sos pendej@?';
+}
+
+.caja21{
+   background-color: white;}
+   input:valid {
+    background-color: #f1f1f1;}
+   form:valid {
+    border: 5px solid #ddffdd;}
+   input:required {
+    border-color: #470505;
+    border-width: 3px;}
+   input:required:invalid {
+    border-color: #C00000;
+}
+
+.caja22{
+   background-color:rgb(245, 220, 255);}
+   :lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+
+.caja23{
+   background-color: white;}
+   ul li {
+   color: blue;}
+    ul li:last-child {
+   border: 1px solid red;
+   color: red;
+}
+
+.caja24{
+   background-color:rgb(245, 220, 255);}
+   .p1:last-of-type {
+   color: red;
+   font-style: italic;
+}
+
+.caja25{
+   background-color: white;}
+   @page :left {
+   margin: 8px 8px;
+}
+
+.caja26{
+   background-color:rgb(245, 220, 255);}
+   .a3:link {
+   background-color: rgb(226, 171, 228);
+   color: rgb(87, 0, 128);
+ }
+
+.caja27{
+   background-color: white;}
+   .a4:local-link {
+   color: rgb(79, 212, 79);
+    }
+
+.caja28{
+   background-color:rgb(245, 220, 255);}
+   :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) ul,
+   :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) menu,
+   :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) dir {
+  list-style-type: square;
+}
+
+.caja29{
+   background-color: white;}
+   .fancy {
+   text-shadow: 2px 2px 3px rgb(193, 78, 228);}
+   .p2:not(.fancy) {
+   color: rgb(98, 0, 128);
+ }
+.caja30{
+   background-color:rgb(245, 220, 255);}
+   html {
+   font-family: sans-serif;}
+   span,
+   div em {
+    padding: 5px;
+    border: 1px solid rgb(243, 12, 147);
+    display: inline-block;
+    margin-bottom: 3px;}
+    .second span:nth-child(2n+1){
+    background-color: rgb(213, 190, 243);
+    }
+
+.caja31{
+   background-color: white;}
+   .p3:nth-of-type(2n+1) {
+   color: red;}
+   .p4:nth-of-type(2n) {
+   color: blue;}
+   .p5:nth-of-type(1) {
+   font-weight: bold;
+ }
+
+.caja32{
+   background-color:rgb(245, 220, 255);}
+   table {
+      border: 1px solid blue; }
+    tr:nth-last-child(-n+3) {
+      background-color: rgb(220, 155, 233);}
+    tr:nth-last-child(n+2) {
+      color: rgb(160, 26, 223);}
+    tr:nth-last-child(2) {
+      font-weight: 600;
+}
+
+.caja33{
+   background-color: white;}
+   .m1 :only-child {
+      color: rgb(204, 0, 255);
+}
+
+.caja34{
+   background-color:rgb(245, 220, 255);}
+   .m2 :only-of-type {
+   color: rgb(255, 0, 170);
+}
+
+.caja35{
+   background-color: white;}
+   input:optional {
+   border: 1px dashed rgb(163, 29, 224);
+}
+
+.caja36{
+   background-color:rgb(245, 220, 255);}
+   li { list-style: none;
+      margin-bottom: 1em;}
+      input {
+      border: 1px solid black;}
+      input:in-range {
+      background-color: rgba(0, 255, 0, 0.25);}
+      input:out-of-range {
+      background-color: rgba(255, 0, 0, 0.25);
+      border: 2px solid red;}
+      input:in-range + label::after {
+      content: 'increible kmo tu.';}
+      input:out-of-range + label::after {
+      content: 'fuera de rango,sos pendej@?';
+}
+.caja37{
+   background-color: white;}
+   :past(p, span) {
+   display: none;
+}
+
+.caja38{
+   background-color:rgb(245, 220, 255);}
+   input {
+    border: 2px solid black;
+    padding: 3px; }
+    input:placeholder-shown {
+    border-color: silver;
+}
+
+.caja39{
+   background-color: white;}
+   :playing {
+    border: 5px solid green;
+}
+
+.caja40{
+   background-color:rgb(245, 220, 255);}
+   :paused {
+   border: 5px solid orange;
+}
+
+.caja41{
+   background-color: white;}
+   .in1 { min-width: 25em; }
+   .in1:-moz-read-only { background: rgb(69, 99, 99); }
+   .in1:read-only { background: rgb(200, 141, 228); ; }.p5:read-only { background: rgb(221, 162, 221); }
+
+.caja42{
+   background-color:rgb(245, 220, 255);}
+   .in1 { min-width: 25em; }
+   .in1:-moz-read-only { background: rgb(69, 99, 99); }
+   .in1:read-only { background: rgb(99, 26, 133); ; }.p5:read-only { background: rgrgb(202, 162, 221)}
+
+.caja43{
+   background-color: white;}
+   input:required{
+   border: 1px dashed red;
+ }
+
+.caja44{
+   background-color:rgb(245, 220, 255);
+}
+
+.caja45{
+   background-color: white;}
+   :root {
+      --main-color: hotpink;
+      --pane-padding: 5px 42px;
+    }
+
+.caja46{
+   background-color:rgb(245, 220, 255);}
+   :scope {
+   background-color: rgb(2, 210, 247);
+    }
+
+.caja47{
+   background-color: white;
+}
+
+.caja48{
+   background-color:rgb(245, 220, 255);}
+   p:target {
+   background-color: gold; }
+   p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;}
+    p:target i {
+   color: red;
+}
+
+.caja49{
+   background-color: white;
+}
